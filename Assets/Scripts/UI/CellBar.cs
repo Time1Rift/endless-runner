@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
-public class Heart : MonoBehaviour
+public class CellBar : MonoBehaviour
 {
     [SerializeField] private float _duration;
 
