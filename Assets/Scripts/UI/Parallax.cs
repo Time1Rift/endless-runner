@@ -19,7 +19,7 @@ public class Parallax : MonoBehaviour
     {
         _imogePositionX += Time.deltaTime * _speed;
 
-        if(_imogePositionX > 1)
+        if (_imogePositionX > 1)
             _imogePositionX = 0;
 
         _imoge.uvRect = new Rect(_imogePositionX, 0, _imoge.uvRect.width, _imoge.uvRect.height);

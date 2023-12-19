@@ -18,7 +18,7 @@ public class Spawner : ObjectPool
     {
         _elapsedTime += Time.deltaTime;
 
-        if(_elapsedTime >= _secondsBetweenSpawn)
+        if (_elapsedTime >= _secondsBetweenSpawn)
         {
             if (TryGetObject(out GameObject result))
             {
