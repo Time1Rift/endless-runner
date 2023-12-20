@@ -20,14 +20,14 @@ public class CellBar : MonoBehaviour
     {
         float startValue = 0;
         float endValue = 1;
-        StartCoroutine(—hangeFullness(startValue, endValue, Fill));
+        StartCoroutine(ChangeFullness(startValue, endValue, Fill));
     }
 
     public void ToEmpty()
     {
         float startValue = 1;
         float endValue = 0;
-        StartCoroutine(—hangeFullness(startValue, endValue, Destroy));
+        StartCoroutine(ChangeFullness(startValue, endValue, Destroy));
     }
 
     private void Fill(float value)
@@ -41,7 +41,7 @@ public class CellBar : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator —hangeFullness(float startValue, float endValue, Action<float> End—hanges)
+    private IEnumerator ChangeFullness(float startValue, float endValue, Action<float> End—hanges)
     {
         float elapsed = 0;
         float nextValue;
