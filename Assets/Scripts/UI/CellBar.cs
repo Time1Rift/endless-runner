@@ -41,7 +41,7 @@ public class CellBar : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private IEnumerator ChangeFullness(float startValue, float endValue, Action<float> End—hanges)
+    private IEnumerator ChangeFullness(float startValue, float endValue, Action<float> EndChanges)
     {
         float elapsed = 0;
         float nextValue;
@@ -54,6 +54,6 @@ public class CellBar : MonoBehaviour
             yield return null;
         }
 
-        End—hanges?.Invoke(endValue);
+        EndChanges?.Invoke(endValue);
     }
 }
