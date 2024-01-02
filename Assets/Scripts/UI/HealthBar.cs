@@ -44,9 +44,9 @@ public class HealthBar : MonoBehaviour
         _hearts.Add(newHeart);
     }
 
-    private void DestroyHeart(CellBar _heart)
+    private void DestroyHeart(CellBar heart)
     {
-        _hearts.Remove(_heart);
+        _hearts.Remove(heart);
         _heart.ToEmpty();
     }
 }
