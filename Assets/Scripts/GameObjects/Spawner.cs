@@ -24,12 +24,12 @@ public class Spawner : ObjectPool
             {
                 _elapsedTime = 0;
                 int index = Random.Range(0, _spawnPoints.Count);
-                SetEnemy(result, _spawnPoints[index].position);
+                SetObject(result, _spawnPoints[index].position);
             }
         }
     }
 
-    private void SetEnemy(GameObject item, Vector3 spawnPoint)
+    private void SetObject(GameObject item, Vector3 spawnPoint)
     {
         item.SetActive(true);
         item.transform.position = spawnPoint;
